@@ -1,0 +1,31 @@
+
+
++++++++++++++++Radio Buttons+++++++++++++++++++
+
+we can select one radio button at a time.
+isDisplayed()-->is the particuler webElement that we look for, is Displayed on the page or not?(returns a boolean).
+
+isEnabled()-->(returns boolean)
+Checks if you can select that radio button or not?
+
+isSelected()----> (Returns a boolean)
+
+++++++++++++++DropDowns++++++++++++++++++
+there are two type of dropdowns
+1- Single select
+2- Multi selcet
+
+1.Single Select
+Method 1:
+click on the drop down
+and then click on the option
+
+Method2:
+Using a select class
+        there is a condition in order to use select class
+        we need to make sure that our drop down has a select tag.
+
+if we use select class we can select in three different mehtods.
+1- by index
+2- by visible text
+3- by value

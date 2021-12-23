@@ -1,0 +1,57 @@
+Frames:
+Identify the iFrames:
+1-Right click on the frame, if you see view frame source then it is an iFrame.
+2-The iFrames are emebedded in the wepage under the tag <iframe>, so search for "//iFrame" and it will show you those iFrames available.
+
+Example:
+<html>
+    <body>
+        <iFrame id="frame1">
+        <html>
+            <body>
+            </body>
+        </html>
+        </iFrame>
+    </body>
+</html>
+<html>
+    <body>
+        <iFrame id="frame2">
+        <html>
+            <body>
+            </body>
+        </html>
+        </iFrame>
+    </body>
+</html>
+
+Before interacting with frames we need to tell our driver to (switch to) the desired frame
+to locate a frame we have three ways to interact with them
+1- By index (driver.switch().frame(int index);
+2- By name or ID (driver.swithTo().frame(String ID or Name);
+3- By WebElement (driver.swithTo().frame(WebElement);
+
+defaultContent()-----> switch the focus bat to the main page
+
+in alerts--> no need to switch back focus
+in frames--> we have to switch our focus back to home page
+
+=============Authentication Alerts===========
+
+Authentication Alerts we need to give user name and password
+in order to handle them we pass the parameters i.e username and password in the url.
+https://admin:admin@the-internet.herokuapp.com/basic_auth (userName:Password@the-internet.herokuapp.com/basic_auth
+
+===================Windows Handle=============
+Selenium treats windows and tabs equaly
+WindowHandle:
+each widow got a unique ID which is called window handle, it is 40 characters alphanumeric.
+
+Handling window in Selenium:
+In order to handle them we will be using methods:
+1-getWindowHandle()-->give the address of the current window the selenium is focusing onto
+2-getWindowsHandles()--> gives the address of all the windows
+
+To switch to a particuler window
+driver.switchTo().window(Handle of the desired window);
+

@@ -1,0 +1,49 @@
+
+Steps to use select class:
+1- to find the WebElement "dropdown" having the select class
+2- create an abject of select class
+3- use any method provided by select class to select the option you desire
+        a- .selectByvalue()-----> parameters the value of attribute "value" is <options> tag
+        b- .selectByindex()-----> parameter then number of the indext
+        c- .selectByVisibleText()---> parameter the text of the option tag which we want to select
+
+4- .getOptions()----->no prameters return us the tags <option> which are child of <select tag>
+return type is <list>webelements
+
+Multiple select drop down
+1. isMultiple()--> if the drop down is multiple-select or not
+
+additional methods:
+ a. deselectbyindex()
+ b. deselectbyvalue()
+ c. deselectbyvisibletext()
+ d. deselectAll()
+
+ Exception
+ no such element exception--> the webelement you are looking for is not there on the page.
+
+ Alerts:
+ it is a popup message, it take the focus completely off the page
+ we cannot procceed in selenium until it is handled
+
+3 type of alerts
+1- web-based alerts(html based alert)---> we can resolve them simply by inspecting
+2- javascrip alerts (browser Alerts) ---> we cannot handle them by inspecting! becaue they don't have html,
+we handle them using switchTo method in selenium from Alert interface.
+
+3- Windows based alerts---> can not handle with selenium
+
+JavaScrip Alert:
+1- simple Alert: just press okay it is done.
+2- confirmation Alert: either cancle it or okay
+3- promp Alert: they ask you to enter some text and press okay, or cancel it.
+
+
+How to handle Javascrip alerts in Selenium?
+using "Alert interface" to handle JavaScrip alerts
+
+The methods that this interface give us:
+1. accept()
+2. dismiss()
+3. getText() (returns the text of that particuler alert.)
+4. sendKeys()

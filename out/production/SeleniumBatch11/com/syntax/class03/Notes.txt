@@ -1,0 +1,65 @@
+
+***************XPATH***************
+why do we need XPath locator?
+developers may not have provided other locators in the html
+by using xpath we can identify those webelements easily
+
+
+What is an XPath?
+xpath is just like a query language(any computer programming language that requests and retrieves data from database and information systems by sending queries)
+that help us to identify elements.
+
+
+Types of Xpath:
+1- Absolute Xpath (full Xpath) -->Strats with a starting node in html
+it starts with a single slash
+(/)
+e.g /html/body/div/div[2]/div/div/div/div/div[2]/div/div/form/div[2]/button
+
+
+
+Example of Absolute XPath
+
+<html>
+
+    <head>
+
+    </head>
+
+        <body>
+
+        <div>
+
+             <a>dakdjf</a>
+
+        </div>
+               <div>
+                <img> </img>
+    </div>
+    <div>
+            <img2></img>
+     </div>
+    </body>
+</html>
+html/body/div[3]/img2
+
+2- Relative Xpath
+Syntax:
+//tagname[@attribute='attribute value']
+example:
+//input[@type='password']//creating xpath for inputes(text boxes)
+hey can you find me the tag input who has an attribute "type" whow attribute value is "password".
+
+
+identifying xpath by its TEXT:
+//tagname[text()='the text']
+can you find me the tag a which has text of value "Text value"
+
+Identifying elements using contain method
+//tagname[contains(@attribute,'sometext')]
+can you find me the tag which has the attribute "attribute" and it value contains "sometext"
+
+
+The Advance Xpath
+/*Identifying elements using advance xpath
+example://label[text()="Enter message"]/following-sibling::input*/

@@ -1,0 +1,98 @@
+Selenium class 01, Nov, 30, 2021
+
+What is software testing?
+verifying or certifying the quality and corrctnesss of the software
+
+How many ways can we test a software?
+1- Manual
+2- Automation
+
+When do we go for automation?
+--frequent regression testing is required.
+--repeated test case execution.
+--efficincy.
+
+
+What are the tools that we have for automation?
+Selenium, UFT/QTP, Cucumber, TestNG, Katlon Studio
+
+Levels of Testing?
+1-Unite Testing
+2-Integration Testing
+3-System Testing
+4-Acceptance Testing
+
+Types of Testing?
+1- Functional Teting (We test the functionality of software like buttons, pop-ups etc....)
+2- Non-Functional Testing(performance, security)
+
+What is Selenium?
+A set of tools that help us to Automate testing of Web based applications only.
+
+Selenium Suite.....................
+1- Selenium IDE--> it is a plugin, record and play...
+Cons: no programing test cases
+2- Selenium RC(Remote Control)-->          a). Supports different Langugaes b). supports different browsers c). it requires a RC server
+3- Selenium webdriver-->                   a). Supports different browsers b). supports different language
+4- Selenium Grid-->                        a). Consists of a node and hub b). Run test cases in parallel on different browsers
+
+Selenium 1
+Selenium 2 --> Selenium RC and webDriver (Combined)
+Selenium 3 --> some improvements in Selenium 2
+Selenium 4 --> Some changes and improvements in the communication protocols
+
+
+Advantage of Selenium:
+--Open source
+--Compatible with different Languages (Java, C#, ruby)
+--it allows to have test cases to run on different browswers (Chrome, Firefox, Safari)
+--it is not OS dependent (Windows, mac, linux)
+
+Dis-Advantages of Selenium:
+-- We do not have technical support as it is open source
+-- we can not test desktop applications
+-- we have no built in reports
+-- can not test captaches , images and videos
+
+
+Selenium Architectrure:
+
+
+
+
+driver.close()---> it will close the tab that we are on
+
+driver.quit()---> it will close the whole browser
+
+get() vs navigate()
+driver.get();--> using get we can not move forward or backward or refresh the web page.
+driver.navigate(); --> using navigate we can go forward and backward and refresh the web pages.
+
+-----------all webpages are made of usually HTML(HyperText Markup Language) ,CSS and js(Java Script)
+
+    we have tags in HTML<>
+    1. tags have different purposes  i.e to define heading, pragraphs, pictures e.t.c
+    we must have an opening and a closing tag <> (Opening tag or node), </> (Closing tag or node).
+    <html> ----> opening tab
+        //here we writh anything we want
+    </html>-----> closing tab
+
+    <batch11>
+          <listofstuents>
+              <name>Farhad</name>
+              <name>Sorbon</name>
+          </listofstudent>
+         <instructors>Moazzam</instructors>
+         <instructors>Asel</instructors>
+    </batch11>
+
+    //html
+    <tag atribute>farhad("farhad is called a value here") </tag>
+
+
+
+
+
+
+
+

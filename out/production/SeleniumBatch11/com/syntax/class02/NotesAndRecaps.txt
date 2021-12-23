@@ -1,0 +1,89 @@
+
+What is selenium?
+A tool for Automating web Aplication tests only.
+
+functional testing is done using selenium
+
+components of Selenioum
+selenium IDE, RC, WebDriver, Grid
+
+we are using selenium 3
+combination of WebDriver and RC
+
+Advantages:
+open source
+works with all Operation Systems
+works with different browsers and languages
+
+
+dis-Advantages
+no support
+no built-in reports
+no desktop application testing
+
+
+
+WebDriver is an interface
+1- Set system properties (Key, Value)
+key is the driver that we are using
+value is the path to that driver
+2- create and object of chromedriver()
+3- use method .get() and pass the url of the website that you want to launch
+
+
+HTML
+
+<html> tag or node
+    <body>
+        <input name="Farhad">//name is atribute and "Farhad" is value, we can have multipul attributes in a tag
+    </body>
+</html> tag or node
+
+the webpage has an underlying html code
+-- everything that we see on the webpage is basically appearing to us through some kind of code
+-- everything in the inspect page is called DOM (Document Object Model) on the webpage click right and click on inspect (Shortcut FnKey+F12)
+
+
+<input id="username"> dialoge box appears for entering username
+<input id="password"> dialoge box appears for entering password
+<button name ="login"><button> login button appears
+
+--we call everything on a webpage webElement
+
+
+Locator
+it is the adress or the position of the WebElement on the page
+we have 8 Locators:
+1-id
+2-name
+3-tagname
+4-classname
+5-linktext
+6-partiallinktext
+7-Xpath
+8-Css selector
+
+if there are 2 element with same attribute names
+then we use anohter locatgor to find the element, but we must make sure that the locator we are opting for is unique enough.
+if there are 2 same attributes with same values selenium is going to return us the first one.
+
+why do we need so many locators?
+if the locator is not unique we can choose the one that is unique.
+the developers may not provide us with all the locators
+
+When do we get a noElement Exception?
+when the Selenium is unable to find the element that we are looking for.
+GO CHECK YOUR LOCATOR / ATTRIBUTE VALUE.
+
+<a> anchor tag, it contains a link.
+we can access this using locator "linktext or partiallink".
+
+a webelement have an underlying code this html code starts with a tag
+the tag may have different attributes these attributes are there to help locate those elements and in some
+cases define the other criterias.
+
+*******************homework*******************
+navigate to the website  parabank.parasoft.com
+fill all the elements
+hit the register button
+close the browser

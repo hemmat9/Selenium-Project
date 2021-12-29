@@ -26,5 +26,10 @@ public class Task1 {
         Alert simpleAlert= driver.switchTo().alert();
         simpleAlert.accept();
 
+        WebElement btn2=  driver.findElement(By.cssSelector("button#display-other-button"));
+        btn2.click();
+        System.out.println(btn2.isEnabled());
+
+
     }
 }

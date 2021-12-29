@@ -1,4 +1,4 @@
-package com.syntax.ReviewClass;
+package com.syntax.ReviewClass01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

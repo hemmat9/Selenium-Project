@@ -1,0 +1,23 @@
+
++++++++++ Selenium Class09 +++++++++++++++++++++
+
+- Why we should avoid Thread.sleep(); ? coz it is time wasting .
+- it is better to use implicit wain instead of Thread.sleep();
+syntax===> driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS)
+
+
+Emplicit wait:
+
+will be applied to all  the findElement()
+we use these waits to wait and find those elements which are not yet there in the DOM, for a specific threshold before we throw and exception
+
+
+Explicit wait for webdriver wait:
+
+
+WEbTables:
+Webtables are elements on the webpage that have rows and colums
+TypeS:
+1: Static WebTables
+2: Dynamic WebTables
+

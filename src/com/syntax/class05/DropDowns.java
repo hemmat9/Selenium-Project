@@ -43,6 +43,7 @@ public class DropDowns {
         for (int i = 0; i < size; i++) {
 
             String optionText= alloptions.get(i).getText();
+            if(optionText.contains("Wednesday"))
             System.out.println(optionText);
         }
 

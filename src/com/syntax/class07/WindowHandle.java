@@ -41,7 +41,7 @@ public class WindowHandle {
    //     inorder to print all window handles we need to iterate over the SET
         Iterator<String> it= allWindowHandles.iterator();
 //        iterate through each window handle
-        while(it.hasNext()){
+        /*while(it.hasNext()){
 //            switch to terms page
             String handle = it.next();
 //            now switch to this particular handle/window
@@ -53,10 +53,10 @@ public class WindowHandle {
                 System.out.println(title);
                 break;
             }
-        }
+        }*/
 
 
-       /* signUpPageHandle = it.next();
+        signUpPageHandle = it.next();
         String helpPageHandle=it.next();
         String termPageHandle = it.next();
         String privacyPageHandle= it.next();
@@ -69,7 +69,7 @@ public class WindowHandle {
 
         //switch to privacy page
         driver.switchTo().window(helpPageHandle);
-        System.out.println(driver.getTitle());*/
+        System.out.println(driver.getTitle());
 
     }
 }

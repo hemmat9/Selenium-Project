@@ -1,0 +1,36 @@
+
+POM (page object Model)
+
+is a design pattern which allows us to enhance test maintainance and reduce code duplication + improve readibility
+we devide our work in portions,
+
+Advantage:
+1-code reusebility
+2-code maintainability
+3- Readibility
+
+
+TestBase (pakage)---> baseClass class it will have all the basic methods(e.g opening and closing the webbrowser).
+Utils (pakage)--> commonMethods class (e.g getting texts, sending keys, clearing a text box, checking if a radio button is enabled, getting url, taking screenshots, waits etc).
+Pages (pakage)-----> it contains the pages of our application that we test (e.g loginPage class, dashboardPage class) we find the elements related to this page
+Test (Pakage)-----> LoginPageTest Class, dashBoardPageTest class (we write our actual test cases here).
+
+PageFactory
+
+it is a class in Selenium
+that allows us to interact with stored elements
+
+
+pulbic WebElement username = driver.findElement(By.id(""); instead of this use @FindBy with pageFactory
+
+use this:
+@FindBy---->annotation
+@FindBy (id='textuser")
+public WebElement userName
+
+1 more extra thing if you are using page factory
+you need initialize your variable
+public loginWithPageFactory(){
+
+    PageFactory.initElement(driver,this);
+}

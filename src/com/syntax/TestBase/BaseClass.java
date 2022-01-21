@@ -7,8 +7,10 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
-    public static WebDriver driver;
-    public static void openWithUrl(String url){
+    public static WebDriver driver;//we have to make it instance and make it public and static to have it across all the classes
+
+
+    public static void openWithUrl(String url) {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
@@ -16,7 +18,9 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
     }
 
-    public static void tearDown(){
-        driver.quit();
+    public static void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

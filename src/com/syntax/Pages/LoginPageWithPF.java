@@ -5,20 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DashBoardPage extends CommonMethods {
+public class LoginPageWithPF extends CommonMethods {
 
-    @FindBy (id="txtUsername")
+@FindBy (id="txtUsername")
     public WebElement username;
-    @FindBy (id="txtPassword")
+@FindBy (id="txtPassword")
     public WebElement password;
-    @FindBy (id="btnLogin")
+@FindBy (id="btnLogin")
     public WebElement loginbtn;
-    @FindBy(xpath = "//a[text()='Welcome Admin']")
-    public WebElement welcomeAdm;
 
-    public DashBoardPage(){
-        PageFactory.initElements(driver, this);
+
+public LoginPageWithPF(){
+
+    PageFactory.initElements(driver,this);
 
     }
 }
-

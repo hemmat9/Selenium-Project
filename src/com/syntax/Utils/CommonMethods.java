@@ -1,11 +1,9 @@
 package com.syntax.HomeWorkClass12.Utils;
-
 import com.syntax.HomeWorkClass12.TestBase.BaseClass;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -16,11 +14,11 @@ public class CommonMethods extends BaseClass {
         element.sendKeys(text);
     }
 
-    public static void takeScreenShot(){
+    public static void takeScreenShot(String fileName){
         TakesScreenshot ts = (TakesScreenshot) driver;
         File sourceFile = ts.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(sourceFile, new File("screenshot/SyntaxHRMS/adminlogin.png"));
+            FileUtils.copyFile(sourceFile, new File("screenshot/POM/"+fileName+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

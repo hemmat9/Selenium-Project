@@ -1,4 +1,4 @@
-package com.syntax.HomeWorkClass12.TestBase;
+package com.syntax.TestBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

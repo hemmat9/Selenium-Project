@@ -1,9 +1,9 @@
-package com.syntax.HomeWorkClass12.Test;
+package com.syntax.Test;
 
-import com.syntax.HomeWorkClass12.Pages.DashBoardPage;
-import com.syntax.HomeWorkClass12.Pages.LoginPageWithPF;
-import com.syntax.HomeWorkClass12.TestBase.BaseClass;
-import com.syntax.HomeWorkClass12.Utils.CommonMethods;
+import com.syntax.Pages.DashBoardPage;
+import com.syntax.Pages.LoginPageWithPF;
+import com.syntax.TestBase.BaseClass;
+import com.syntax.Utils.CommonMethods;
 import org.openqa.selenium.WebElement;
 
 public class DashBoardPageTest {

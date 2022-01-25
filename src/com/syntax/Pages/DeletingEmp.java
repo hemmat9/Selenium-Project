@@ -1,2 +1,5 @@
-package com.syntax.Pages;public class DeletingEmp {
+package com.syntax.Pages;
+
+public class DeletingEmp {
+
 }

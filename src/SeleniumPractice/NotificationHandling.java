@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-public class faceBookAccount {
+public class NotificationHandling {
     public static String URL = "https://www.facebook.com/";
 
     public static void main(String[] args) throws InterruptedException {

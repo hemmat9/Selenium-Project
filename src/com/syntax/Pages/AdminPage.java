@@ -1,6 +1,7 @@
-package com.syntax.HomeWorkClass12.Pages;
+package com.syntax.Pages;
 
-import com.syntax.HomeWorkClass12.Utils.CommonMethods;
+import com.syntax.Utils.CommonMethods;
+import com.syntax.Utils.CommonMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
